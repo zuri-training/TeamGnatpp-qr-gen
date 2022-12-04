@@ -51,6 +51,8 @@ An interactive web platform that allows users input link to generate a QR code w
 | [Folakemi Bamigboye](mailto:temitopefolakemi20@gmail.com)|`Product Designer`|
 | [Mary Edah](mailto:ladysnowz85@gmail.com)|`Product Designer`|
 | [Ifeyinwa Daniel](https://www.linkedin.com/in/ifeyinwa-daniel-2964a8118)|`Product Designer`|
+| [Umoinyang Victor Cosmos](Cosmosvictor122@gmail.com)|`Product Designer`|
+| [Nathaniel Oghene](eferizyy@gmail.com)|`Product Designer`|
 | [Afolabi Abdullahi](https://github.com/Linktoyinka)|`Frontend Developer`|
 | [Prescouz Mcwilliams](http://github.com/McwilliamsPM)|`Frontend Developer`|
 | [Stephanie Alor](mailto:Stephaniedex6@gmail.com)|`Fullstack NodeJS`|
