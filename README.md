@@ -7,6 +7,9 @@
 ### QRnaty
 An interactive web platform that allows users input link to generate a QR code wherein they can store a variety of data and information in their code. The QR code generated will be available for downloads in jpeg, png and pdf. Whoever scans the code automatically gets directed to the link embedded in it. 
 
+## Project Structure
+![image](https://www.linkpicture.com/q/teamGnaptt.jpg.png)
+
 ## Technology Used
 ### Design
 - Figma
