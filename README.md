@@ -8,8 +8,8 @@
 An interactive web platform that allows users input link to generate a QR code wherein they can store a variety of data and information in their code. The QR code generated will be available for downloads in jpeg, png and pdf. Whoever scans the code automatically gets directed to the link embedded in it. 
 
 ## Project Structure
-[![team-Gnaptt-jpg.png](https://i.postimg.cc/0jVdFVbm/team-Gnaptt-jpg.png)](https://postimg.cc/kRtbtFNX)
-[Click here to view](https://postimg.cc/kRtbtFNX)
+[![team-Gnaptt.png](https://i.postimg.cc/gcDJrtFB/team-Gnaptt.png)](https://postimg.cc/Jtsm2qhb)
+[Click here to view](https://postimg.cc/Jtsm2qhb)
 
 
 ## Technology Used
