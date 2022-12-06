@@ -9,7 +9,7 @@ An interactive web platform that allows users input link to generate a QR code w
 
 ## Project Structure
 [![team-Gnaptt-jpg.png](https://i.postimg.cc/0jVdFVbm/team-Gnaptt-jpg.png)](https://postimg.cc/kRtbtFNX)
-
+[Click here to view](https://postimg.cc/kRtbtFNX)
 
 
 ## Technology Used
