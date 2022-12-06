@@ -10,6 +10,8 @@ An interactive web platform that allows users input link to generate a QR code w
 ## Project Structure
 ![image](https://www.linkpicture.com/q/teamGnaptt.jpg.png)
 
+
+
 ## Technology Used
 ### Design
 - Figma
