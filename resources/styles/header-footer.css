@@ -17,15 +17,19 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
 header {
+    padding: 3% 5%;
+    height: 200px;
+    background-image: url(/resources/images/hero-header-bck.png);
+    background-position: -200% 60%;
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+}
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3% 5%;
-    /* position: fixed; */
-    /* width: 100%; */
-    /* z-index: 30; */
 }
 
 .logo img {
@@ -40,14 +44,14 @@ nav {
 
 nav a {
     margin: 0 4%;
-    padding: 2% 0;
-    border-bottom: 2px solid var(--orange);
-    /* color: white; */
+    padding: 1% 0;
+    /* border-bottom: 2px solid var(--orange); */
+    color: white;
 }
 
 a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .reg a {
@@ -55,8 +59,22 @@ a {
     margin: 5px;
 }
 
-.btn {
+.btn-header {
     padding: 6px 9px;
     border: 1px solid var(--orange);
     border-radius: 5px;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 3% 5%;
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+.footer1 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }

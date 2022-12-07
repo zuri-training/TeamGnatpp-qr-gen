@@ -20,6 +20,12 @@ h1 {
     color: var(--blue);
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--blue);
+}
+
 p {
     font-family: Inter;
     font-size: 24px;
@@ -37,25 +43,20 @@ section {
 
 .hero {
     display: flex;
-    /* position: absolute;
-    top: 0;
-    z-index: 1; */
     background-image: url(/resources/images/Frame\ 22.png), url(/resources/images/Frame\ 17.png), url(/resources/images/Frame\ 17.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: auto;
-    background-position: 15% 30%, 75% 25%, 20% 90%;
+    background-position: 14% 0%, 75% 0%, 20% 90%;
     
 }
 
 .left {
     width: 60%;
-    margin-top: 20%;
 }
 
 .right {
   width: 40%;
   text-align: center;
-  margin-top: 20%;
 }
 
 .right img {
@@ -63,7 +64,7 @@ section {
 }
 
 .left p {
-    margin: 15px 0 5px 0;
+    margin: 15px 0 10px 0;
 }
 
 .sec-btn {
@@ -76,4 +77,57 @@ section {
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
+}
+
+.qrnaty {
+    padding: 10% 5%;
+    background-image: url(/resources/images/image\ 3.png), url(/resources/images/image\ 3.png), url(/resources/images/image\ 3.png), url(/resources/images/image\ 3.png), url(/resources/images/Frame\ 17.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 90% 0, 70% 20%, 10% 100%, 85% 75%, 70% 100%;
+}
+
+.qrnaty-1 {
+    width: 70%;
+}
+
+.qrnaty p {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+ul img {
+    margin-right: 2%;
+    width: 2.5%;
+}
+
+li {
+    margin: 10px 0;
+}
+
+li span {
+    font-size: 23px;
+    font-weight: 300;
+    color: var(--blue);
+}
+
+.faq p {
+    margin: 15px 0;
+}
+
+.faq {
+    background-image: url(/resources/images/image\ 3.png);
+    background-repeat: no-repeat;
+    background-position: 60% 120%;
+}
+
+.faq .sec-btn {
+    font-weight: 300;
 }
