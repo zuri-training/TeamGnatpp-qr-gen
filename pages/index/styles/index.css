@@ -131,3 +131,83 @@ li span {
 .faq .sec-btn {
     font-weight: 300;
 }
+
+@media screen and (max-width: 1000px) {
+    
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .qrnaty p {
+        font-size: 15px;
+    }
+
+    li span {
+        font-size: 18px;
+    }
+
+    .sec-btn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    h1 {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .qrnaty p {
+        font-size: 15px;
+    }
+
+    li span {
+        font-size: 15px;
+    }
+
+    .sec-btn {
+        font-size: 15px;
+    }
+
+    ul img {
+        margin-right: 2%;
+        width: 3.5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .right, .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right img {
+        width: 50%;
+    }
+
+    .qrnaty-1 {
+        width: 100%;
+    }
+}
