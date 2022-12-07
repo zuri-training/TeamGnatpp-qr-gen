@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #092C4C;
+    --orange: #FC9E4F;
+    --black: #262525;
+}
+
+/* FONTS */
+h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 58px;
+    color: var(--blue);
+}
+
+p {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: var(--blue);
+
+}
+
+/* FONT ENDS */
+
+section {
+    padding: 5% 5%;
+}
+
+.hero {
+    display: flex;
+    /* position: absolute;
+    top: 0;
+    z-index: 1; */
+    
+}
+
+.left {
+    width: 60%;
+    margin-top: 20%;
+}
+
+.right {
+  width: 40%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.right img {
+    width: 70%;
+}
+
+.left p {
+    margin: 15px 0 5px 0;
+}
+
+.sec-btn {
+    padding: 10px 40px;
+    background-color: var(--orange);
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
