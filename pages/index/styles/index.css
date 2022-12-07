@@ -40,6 +40,10 @@ section {
     /* position: absolute;
     top: 0;
     z-index: 1; */
+    background-image: url(/resources/images/Frame\ 22.png), url(/resources/images/Frame\ 17.png), url(/resources/images/Frame\ 17.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto;
+    background-position: 15% 30%, 75% 25%, 20% 90%;
     
 }
 
