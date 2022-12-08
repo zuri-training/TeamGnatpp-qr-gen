@@ -257,9 +257,27 @@
       outline: none;
     }
 
-
-
-
+/* Kite class */
+    .kite{
+      position: absolute;
+      width: 5rem;
+    }
+    .kite:nth-child(1){
+      top: 84%;
+      left: 24%;
+    }
+    .kite:nth-child(2){
+      top: 165%;
+      left: 70%;
+    }
+    .kite:nth-child(3){
+      top: 68%;
+      left: 80%;
+    }
+    .kite:nth-child(4){
+      top: 125%;
+      left: 85%;
+    }
 
 
 
@@ -502,6 +520,29 @@
     .dropdown-items a:nth-child(2) button:hover {
       border: none;
       background: var(--secondary-color);
+    }
+
+
+    /* Kite class */
+    .kite{
+      position: absolute;
+      width: 5rem;
+    }
+    .kite:nth-child(1){
+      top: 100%;
+      left: 24%;
+    }
+    .kite:nth-child(2){
+      top: 160%;
+      left: 20%;
+    }
+    .kite:nth-child(3){
+      top: 68%;
+      left: 65%;
+    }
+    .kite:nth-child(4){
+      top: 130%;
+      left: 65%;
     }
 
 
