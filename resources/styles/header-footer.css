@@ -264,6 +264,10 @@ hr {
     .footer2 {
         font-size: 13px;
     }
+
+    .logo img {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 500px) {
