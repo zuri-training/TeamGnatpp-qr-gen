@@ -1,0 +1,125 @@
+.hero {
+  display: grid;
+  width: 100%;
+  margin: auto;
+}
+
+.faq_section_1 p {
+  text-align: center;
+  color: #262525;
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+
+.faq_section_1 p:nth-child(1) {
+  color: #fc9e4f;
+  font-size: 4vw;
+  margin-bottom: 5px;
+  padding-bottom: 6px;
+}
+
+.faq_section_2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 60%;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+
+.faq_section_2:hover {
+  width: 62%;
+  transition: width 2s ease-in-out;
+}
+
+.faq_section_2 details {
+  border: 1px solid #fc9e4f;
+  border-bottom: none;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.faq_section_2 summary {
+  font-size: 1.7vw;
+  color: #262525;
+  cursor: pointer;
+}
+
+.faq_section_2 article {
+  text-align: justify;
+  padding: 20px;
+  font-size: 1.6vw
+}
+
+.dropbtn {
+  text-align: center;
+  margin: auto;
+  color: #262525;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.dropdown-content:hover {
+  width: 100%;
+}
+
+.dropdown:hover {
+  width: 60%;
+  transition: width 2s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: relative;
+}
+@media screen and (max-width: 640px) {
+  .faq_section_1 p {
+    font-size: 2.2vw;
+  }
+  .faq_section_1 p:nth-child(1) {
+    font-size: 5vw;
+  }
+  .faq_section_2 {
+    width: 80%;
+    padding-bottom: 0;
+  }
+  .faq_section_2:hover {
+    width: 82%;
+  }
+  .faq_section_2 summary, .faq_section_3 p, .faq_section_2 article {
+    font-size: 2.2vw;
+  }
+  .faq_section_3 p {
+    padding: 0;
+  }
+  .dropbtn{
+    font-size: 2.2vw;
+  }
+  .dropdown {
+    width: 70%;
+  }
+  .dropdown:hover {
+    width: 80%;
+  }
+  .dropdown-content {
+    width: 100%;
+  }
+  .dropdown-content:hover {
+    width: 100%;
+  }
+}
