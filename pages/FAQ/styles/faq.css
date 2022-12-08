@@ -1,0 +1,52 @@
+.hero {
+  display: grid;
+  width: 100%;
+  margin: auto;
+}
+
+.faq_section_1 p {
+  text-align: center;
+  color: #262525;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.faq_section_1 p:nth-child(1) {
+  color: #fc9e4f;
+  font-size: 40px;
+  padding-bottom: 6px;
+}
+
+.faq_section_2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 60%;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+
+.faq_section_2 article {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  border: 1px solid #fc9e4f;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.faq_section_2 p {
+  font-size: 16px;
+  color: #262525;
+}
+
+.faq_section_2 p:nth-child(2) {
+  text-align: center;
+  cursor: pointer;
+}
+
+.faq_section_3 p {
+  font-size: 15px;
+  color: #262525;
+  text-align: center;
+}
