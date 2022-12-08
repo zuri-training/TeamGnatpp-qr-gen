@@ -1,3 +1,23 @@
+
+zuri-training
+/
+TeamGnatpp-qr-gen
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+1
+Wiki
+Security
+Insights
+Settings
+TeamGnatpp-qr-gen/pages/login/styles/login.css
+@KasiePatricia
+KasiePatricia Reduced the size of the image
+ 2 contributors
+341 lines (328 sloc)  5.49 KB
 :root {
   --primary-color: #ffffff;
   --secondary-color: #092c4c;
@@ -11,9 +31,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
-  color: var(--orange-color)
+  color: var(--orange-color);
 }
 a:hover {
   color: var(--orange-color-hover);
@@ -23,10 +44,13 @@ a:hover {
 body {
   font-family: "Inter", sans-serif;
   width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
 }
+
 /* Main */
 main {
-    position: relative;
+  position: relative;
 }
 .container {
   display: grid;
@@ -45,7 +69,6 @@ main {
   align-items: center;
   width: 90%;
   margin: 0 auto;
-  min-height: 800px;
 }
 
 .form-content {
@@ -81,7 +104,7 @@ main {
 }
 .qr-container {
   position: absolute;
-  bottom: -2%;
+  bottom: 2%;
   left: 28%;
   z-index: 99;
 }
@@ -93,7 +116,7 @@ main {
   left: 2%;
 }
 .p-qr-3 {
-  bottom: -12%;
+  bottom: 12%;
   left: 7%;
 }
 .form-title {
@@ -143,7 +166,7 @@ main {
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
   white-space: nowrap;
 }
 .remember-group {
@@ -215,18 +238,21 @@ main {
 
 @media (min-width: 560px) {
   .form-content {
-    min-width: 584px;
-    padding: 84px 80px 100px;
+    min-width: 500px;
+    padding: 60px;
   }
   .button {
     padding: 10px;
+  }
+  .form-control {
+    margin-bottom: 10px;
   }
   .p-qr-2 {
     top: 50%;
     left: 5%;
   }
   .p-qr-3 {
-    bottom: -15%;
+    top: 15%;
     left: 10%;
   }
 }
@@ -236,13 +262,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 100vh;
-  }
-  .form-section {
-    min-height: 800px;
-  }
-  .form-content {
-    min-width: 584px;
-    padding: 84px 70px 100px;
   }
 
   /* Image section */
@@ -257,10 +276,11 @@ main {
         rgba(9, 44, 76, 0.6),
         rgba(9, 44, 76, 0.6)
       ),
-      url("/resources/images/qr\ img.jpeg");
-  
+      url("../../../resources/images/qr\ img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     width: 100%;
-    min-height: 1024px;
     height: 100%;
   }
   .image-section img {
@@ -288,14 +308,14 @@ main {
     line-height: 54px;
     margin-bottom: 25px;
   }
-  .image-textp {
+  .image-text p {
     font-size: 25px;
     line-height: 30px;
     width: 370px;
     padding-bottom: 25px;
   }
   .form-control {
-    margin-bottom: 37px;
+    margin-bottom: 30px;
   }
   .form-label {
     font-size: 18px;
@@ -329,7 +349,7 @@ main {
     left: 35%;
   }
   .p-qr-3 {
-    bottom: -25%;
+    bottom: 25%;
     left: 40%;
   }
 }
