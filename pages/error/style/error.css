@@ -1,0 +1,170 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #092c4c;
+  --secondary-color-hover: #13528d;
+  --header-color: #e94f37;
+  --orange-color-hover: #e07d2b;
+}
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utilities */
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+/* main */
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+}
+.erorr-content {
+  display: grid;
+  gap: 38px;
+  width: 80%;
+}
+
+.error-title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 80px;
+  color: var(--header-color);
+  padding-bottom: 0px;
+}
+.error-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--secondary-color);
+  padding-bottom: 5px;
+}
+.error-para {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--secondary-color);
+}
+
+/* Button */
+.button-container {
+  display: grid;
+  place-items: center;
+}
+.button {
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+.button-1 {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+}
+.button-1:hover {
+  background-color: var(--secondary-color-hover);
+}
+.diagonal {
+  width: 20px;
+  height: 20px;
+  background: rgba(9, 44, 76, 0.1);
+  transform: rotate(-48.59deg);
+  z-index: 2;
+  position: absolute;
+}
+.diagonal-1 {
+  top: 10%;
+  left: 10%;
+}
+.diagonal-2 {
+  top: 10%;
+  right: 10%;
+}
+.diagonal-3 {
+  top: 30%;
+  left: 30%;
+}
+.diagonal-4 {
+  top: 30%;
+  right: 30%;
+}
+.diagonal-5 {
+  top: 60%;
+  left: 40%;
+}
+.diagonal-6 {
+  bottom: 10%;
+  left: 10%;
+}
+.diagonal-7 {
+  bottom: 10%;
+  right: 40%;
+}
+.qr {
+  position: absolute;
+}
+.qr-1 {
+  bottom: 20%;
+  left: 20%;
+}
+.qr-2 {
+  bottom: 20%;
+  right: 20%;
+}
+.qr-3 {
+  bottom: 30%;
+  right: 40%;
+}
+.qr-4 {
+  bottom: 45%;
+  left: 10%;
+}
+.qr-5 {
+  top: 55%;
+  right: 10%;
+}
+
+@media (min-width: 1000px) {
+  .error-title {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 104px;
+    padding-bottom: 30px;
+  }
+  .error-subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .error-para {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+  }
+  .button {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 25px;
+  }
+  .diagonal {
+    width: 30px;
+    height: 30px;
+  }
+}
