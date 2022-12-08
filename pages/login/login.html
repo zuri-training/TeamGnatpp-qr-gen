@@ -14,12 +14,13 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <title>Log in | QRnaty</title>
     <link rel="shortcut icon" href="../../resources/images/favicon.svg" type="image/x-icon">
   </head>
   <body>
-     <main>
+    <main>
+      <div class="diagonal diagonal-out-main"></div>
       <section class="container">
         <section class="image-section">
           <div class="image-text">
@@ -34,12 +35,12 @@
               <h3 class="form-title">Log in</h3>
               <div class="form-control">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required>
                 <div class="error"></div>
               </div>
               <div class="form-control">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required>
                 <div class="error"></div>
               </div>
               <div class="remember-forgot">
@@ -52,38 +53,37 @@
                   />
                   <p class="remember">Remember me</p>
                 </div>
-                <a href="../forgot-password/forgot-password.html" class="forgot">Forgot Password?</a>
+                <a href="#" class="forgot">Forgot Password?</a>
               </div>
               <div class="button-group">
                 <button class="button login-button">Login</button>
                 <a href="#" class="button google-button">
-                  <img src="../../resources/images/google logo.jpeg" alt="" />
+                    <img src="/resources/images/google logo.jpeg" alt="">
                   <p>Login with Google</p>
                 </a>
               </div>
               <div class="options">
                 <p>
                   Don't have an account?
-                  <a href="../signup/signup.html" class="sign-up">sign up here</a>
+                  <a href="/pages/signup/signup.html">Sign up here</a>
                 </p>
               </div>
               <div class="qr-container">
-                <img src="../../resources/images/qr.png" alt="" />
+                <img src="./images/qr.png" alt="" />
               </div>
               <div class="diagonal diagonal-two"></div>
             </form>
           </div>
-          <div class="qr-wrapper p-qr-2">
-            <img src="../../resources/images/qr.png" alt="" />
-          </div>
-          <div class="qr-wrapper p-qr-3">
-            <img src="../../resources/images/qr.png" alt="" />
-          </div>
-          <div class="diagonal diagonal-out-main"></div>
         </section>
       </section>
+      <div class="qr-wrapper p-qr-2">
+        <img src="./images/qr.png" alt="" />
+      </div>
+      <div class="qr-wrapper p-qr-3">
+        <img src="./images/qr.png" alt="" />
+      </div>
     </main>
-    <script src="../../resources/script/login.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
 
