@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/pages/profile/fontawesome/css/all.min.css">
     <!-- Google font Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Profile</title>
 </head>
 
@@ -72,7 +73,7 @@
                         </div>
                         <div>
                             <label for="l_name">last name</label>
-                            <input type="text" id="l_name">
+                            <input type="text" id="l_name" required>
                         </div>
                     </div>
                     <label for="title">Title</label>
@@ -89,13 +90,13 @@
                 <h1 class="text">Contact information</h1>
                 <article>
                     <label for="p_number">contact phone</label>
-                    <input type="text" id="p_number">
+                    <input type="text" id="p_number" required>
                     <br>
                     <label for="e_mail" class="label">Email address</label>
                     <input type="email" id="e_mail" required>
                     <br>
                     <label for="country" class="label">country</label>
-                    <select name="country" id="country">
+                    <select name="country" id="country" required>
                         <option>-select country-</option>
                         <option value="EC">Ecuador</option>
                         <option value="EG">Egypt</option>
@@ -207,7 +208,11 @@
                     </select>
                     <br>
                     <label for="city" class="label">city</label>
-                    <select name="city" id="city"></select>
+                    <select name="city" id="city">
+                        <option value="">-select city-</option>
+                        <option value="">Lagos</option>
+                        <option value="">Onitsha</option>
+                    </select>
                     <button type="submit" id="update-profile">Update profile</button>
                 </article>
             </section>

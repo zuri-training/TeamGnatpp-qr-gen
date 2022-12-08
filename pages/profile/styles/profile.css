@@ -8,6 +8,7 @@
   --primary-color: #080837;
   --secondary-color: #fcc255;
   --padding: 1.2rem 2.5rem;
+  --padding-2: 1.2rem 0.5rem;
   --boxShadow: -3px -3px 7px #f2f2f2,
     3px 3px 7px #f2f2f2;
     scroll-behavior: smooth;
@@ -203,10 +204,9 @@
     }
   .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     column-gap: 2rem;
-    row-gap: 1rem;
   }
   #profile >:nth-child(3) label, .grid div label{
     display: block;
@@ -351,6 +351,7 @@
 ****************************************************************************************  */
 
 @media screen and (max-width: 767px ) {
+
   header {
       box-shadow: 0px -3px 7px var(--secondary-color);
       position: fixed;
@@ -360,7 +361,9 @@
     }
   
     header .container {
-      padding: var(--padding);
+      padding: var(--padding-2);
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -496,7 +499,7 @@
       Main SECTION
     ********************************/
     main {
-      padding: var(--padding);
+      padding: var(--padding-2);
       position: relative;
       padding-bottom: 6rem;
       padding-top: 5rem;
@@ -579,18 +582,27 @@
   
     #profile>:nth-child(3) {
       padding: var(--padding);
+      padding-left: 1.2rem;
     }
-
+    #profile>:nth-child(3) select{
+      /* Replace Default styling (arrow) */
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10.127L12 18.127L20 10.127H4Z" fill="%238E8E93"/></svg>');
+      background-repeat: no-repeat;
+      background-position-y: 50%;
+      background-position-x: 98%;
+    }
       .grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    row-gap: 1rem;
   }
   #profile >:nth-child(3) label, .grid div label{
     display: block;
     padding: 0.5rem 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
   }
   .grid div input{
@@ -634,13 +646,14 @@
     form #contact_info article{
       box-shadow: var(--boxShadow);
       padding: var(--padding);
+      padding-left: 1.2rem;
       padding-bottom: 5rem;
     }
     form #contact_info article label{
       display: block;
       width: 100%;
       padding: 0.5rem 0;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-transform: capitalize;
     }
     form #contact_info article .label{
