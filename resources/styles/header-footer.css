@@ -15,21 +15,22 @@
 body {
     width: 100%;
     font-family: 'Inter', sans-serif;
+    font-size: 13px;
 }
 
 header {
-    padding: 3% 5%;
-    height: 200px;
+    padding: 3%;
+    height: 301px;
     background-image: url(/resources/images/hero-header-bck.png);
-    background-position: -300% 60%;
-    /* background-size: 100%; */
-    /* background-repeat: no-repeat; */
+    background-position: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 15% 75% 15%;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo img {
@@ -38,12 +39,12 @@ header {
 }
 
 nav {
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
 nav a {
-    margin: 0 4%;
+    margin: 0 2%;
     padding: 1% 0;
     /* border-bottom: 2px solid var(--orange); */
     color: white;
