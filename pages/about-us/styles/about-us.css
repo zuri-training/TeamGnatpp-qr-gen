@@ -28,6 +28,7 @@ h1 {
 }
 
 section {
+    text-align: center;
     padding: 3% 5%;;
 }
 
@@ -44,6 +45,27 @@ section {
 
 .images {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 80%;
+    /* padding: 3% 40%; */
 }
 
+.images-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 22%;
+    text-align: center;
+    color: var(--black);
+    margin-top: 3%;
+}
+
+.card img {
+    width: 100%;
+}
