@@ -50,10 +50,10 @@ header {
     height: 100vh;
     background-color: var(--blue);
     padding: 25px;
-    direction: rtl;
+    direction: ltr;
     top: 0;
     right: 100%;
-    margin-top: 64px;
+    margin-top: 12.5%;
     transition: 0.4s;
 }
 
@@ -206,7 +206,7 @@ hr {
 
 @media screen and (max-width: 900px) {
     header {
-        height: 150px;        
+        height: 150px;
     }
 }
 
@@ -235,7 +235,15 @@ hr {
         display: block;
     }
 
-
+    header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-image: none;
+        height: auto;
+        padding: 3%;
+    }
 
 }
 
@@ -257,25 +265,12 @@ hr {
         font-size: 13px;
     }
 
-    /* .footer-content {
-        font-weight: 200;
-    } */
-
     .footer2 {
         font-size: 13px;
     }
 
     .logo img {
         width: 50%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header {
-        padding: 3% 5%;
-        height: 100px;
-        background-position: 90% 0px;
-        background-size: 60%;
     }
 }
 
@@ -295,5 +290,9 @@ hr {
     
     .col1 img {
         width: 20%;
+    }
+
+    .nav-mobile {
+        margin-top: 14%;
     }
 }
