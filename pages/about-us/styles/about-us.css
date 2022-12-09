@@ -69,3 +69,89 @@ section {
 .card img {
     width: 100%;
 }
+
+@media screen and (max-width: 890px) {
+    .h-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .card {
+        width: 29%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .h-content h3 {
+        font-size: 20px;
+    }
+
+    .text h3 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .h-content {
+        width: 100%;
+    }
+    .card {
+        width: 29%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .h-content h3 {
+        font-size: 18px;
+    }
+
+    .text h3 {
+        font-size: 15px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    /* .card {
+        width: 40%;
+    } */
+
+    .images {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .card {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .h-content h3 {
+        font-size: 16px;
+    }
+
+    .text h3 {
+        font-size: 14px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+}
