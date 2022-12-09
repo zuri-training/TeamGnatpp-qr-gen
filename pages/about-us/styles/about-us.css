@@ -16,6 +16,13 @@ body  {
     font-family: 'Inter', sans-serif;
 }
 
+main {
+    background-image: url(../../../resources/images/image\ 3.png), url(../../../resources/images/image\ 3.png), url(../../../resources/images/Frame\ 22.png), url(../../../resources/images/Frame\ 22.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: fixed, fixed, fixed, fixed;
+    background-position: 70% 90%, 85% 85%, 10% 3%, 90% 0;
+}
+
 h1 {
     color: var(--orange);
     font-size: 45px;
@@ -68,6 +75,8 @@ section {
 
 .card img {
     width: 100%;
+    /* border-radius: 7px;
+    border: 2px solid var(--orange); */
 }
 
 @media screen and (max-width: 890px) {
