@@ -1,58 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+  --blue: #092C4C;
+  --orange: #FC9E4F;
+  --black: #262525;
+}
+
+body  {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+}
+
+main {
+  background-image: url(../../../resources/images/image\ 3.png), url(../../../resources/images/image\ 3.png), url(../../../resources/images/Frame\ 22.png), url(../../../resources/images/Frame\ 22.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: fixed, fixed, fixed, fixed;
+  background-position: 10% 90%, 90% 85%, 10% 3%, 90% 0;
+}
+
 .hero {
   display: grid;
   width: 100%;
   margin: auto;
 }
 
-.faq_section_1 p {
-  text-align: center;
-  color: #262525;
-  font-size: 1.8vw;
-  font-weight: 500;
+h1 {
+  color: var(--orange);
+  font-size: 45px;
 }
 
-.faq_section_1 p:nth-child(1) {
-  color: #fc9e4f;
-  font-size: 4vw;
-  margin-bottom: 5px;
-  padding-bottom: 6px;
+.h-content h3 {
+  font-size: 25px;
+  color: var(--black);
+  margin-top: 2%;
+}
+
+section {
+  /* text-align: center; */
+  padding: 3% 5%;;
+}
+
+.faq_section_1 {  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-content {
+  width: 60%;
+  text-align: center;
 }
 
 .faq_section_2 {
   display: grid;
   grid-template-rows: 1fr;
-  width: 60%;
+  width: 65%;
   margin: auto;
   padding: 0 0 20px 0;
 }
 
-.faq_section_2:hover {
-  width: 62%;
-  transition: width 2s ease-in-out;
-}
+/* .faq_section_2:hover {
+  width: 62%; */
+  /* transition: width 2s ease-in-out;
+} */
 
 .faq_section_2 details {
   border: 1px solid #fc9e4f;
   border-bottom: none;
   margin: 8px;
-  padding: 8px;
   border-radius: 5px;
   box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .faq_section_2 summary {
-  font-size: 1.7vw;
+  font-size: 20px;
   color: #262525;
   cursor: pointer;
+  padding: 8px;
+  font-weight: 550;
+}
+
+summary {  
+  /* background-color: #FC9E4F; */
 }
 
 .faq_section_2 article {
   text-align: justify;
-  padding: 20px;
-  font-size: 1.6vw
+  padding: 2%;
+  font-size: 18px;
 }
 
-.dropbtn {
+/* .dropbtn {
   text-align: center;
   margin: auto;
   color: #262525;
@@ -86,25 +124,19 @@
 .dropdown:hover .dropdown-content {
   display: block;
   position: relative;
-}
+} */
 @media screen and (max-width: 640px) {
-  .faq_section_1 p {
-    font-size: 2.2vw;
-  }
-  .faq_section_1 p:nth-child(1) {
-    font-size: 5vw;
-  }
   .faq_section_2 {
     width: 80%;
     padding-bottom: 0;
   }
-  .faq_section_2:hover {
+  /* .faq_section_2:hover {
     width: 82%;
-  }
-  .faq_section_2 summary, .faq_section_3 p, .faq_section_2 article {
+  } */
+  /* .faq_section_2 summary, .faq_section_3 p, .faq_section_2 article {
     font-size: 2.2vw;
-  }
-  .faq_section_3 p {
+  } */
+  /* .faq_section_3 p {
     padding: 0;
   }
   .dropbtn{
@@ -121,5 +153,79 @@
   }
   .dropdown-content:hover {
     width: 100%;
+  } */
+}
+
+
+@media screen and (max-width: 890px) {
+  .h-content {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .faq_section_2 summary {
+    font-size: 18px;
+  }
+  
+  .faq_section_2 article {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  h1 {
+      font-size: 35px;
+  }
+
+  .h-content h3 {
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .h-content {
+      width: 100%;
+  }
+
+  h1 {
+      font-size: 30px;
+  }
+
+  .h-content h3 {
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .faq_section_2 summary {
+    font-size: 15px;
+  }
+  
+  .faq_section_2 article {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  h1 {
+      font-size: 25px;
+  }
+
+  .faq_section_2 {
+    width: 98%;
+  }
+
+  .h-content h3 {
+      font-size: 16px;
+  }
+
+  .faq_section_2 summary {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .faq_section_2 article {
+    font-size: 13px;
   }
 }

@@ -24,7 +24,7 @@ main {
     background-position: 10% 90%, 90% 85%, 10% 3%, 90% 0;
 }
 
-h1 {
+h1 { 
     color: var(--orange);
     font-size: 45px;
 }
