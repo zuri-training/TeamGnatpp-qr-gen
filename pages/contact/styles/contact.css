@@ -21,7 +21,7 @@ main {
     background-image: url(../../../resources/images/image\ 3.png), url(../../../resources/images/image\ 3.png), url(../../../resources/images/Frame\ 22.png), url(../../../resources/images/Frame\ 22.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: fixed, fixed, fixed, fixed;
-    background-position: 70% 90%, 85% 85%, 10% 3%, 90% 0;
+    background-position: 10% 90%, 90% 85%, 10% 3%, 90% 0;
 }
 
 h1 {
@@ -108,26 +108,22 @@ label {
     margin-top: 5%;
 }
 
-textarea {
-    /* height: 500px; */
-    width: 100%;
-}
 
 .btn {
-    padding: 6px 15px;
-    /* border: 1px solid var(--orange); */
+    padding: 1.5% 8%;
     border-radius: 5px;
-    border: 0;
+    border: none;
     background-color: var(--orange);
     color: var(--blue);
     cursor: pointer;
-    /* font: 40%; */
-
+    font-size: 17px;
 }
 
 .box-2 {
     height: 150px;
     width: 100%;
+    max-width: 100%;
+    margin-bottom: 5%;
 }
 
 @media screen and (max-width: 890px) {
@@ -172,6 +168,10 @@ textarea {
 
     .box {
         padding: 10px;
+        font-size: 15px;
+    }
+
+    .btn {
         font-size: 15px;
     }
 
