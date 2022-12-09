@@ -177,7 +177,6 @@
     display: inline-flex;
     gap: 7px;
   }
-  
   .forgot {
     color: var(--orange-color);
   }
