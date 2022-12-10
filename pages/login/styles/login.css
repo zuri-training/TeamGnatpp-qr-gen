@@ -177,7 +177,6 @@
     display: inline-flex;
     gap: 7px;
   }
-  
   .forgot {
     color: var(--orange-color);
   }
@@ -285,9 +284,9 @@
       background-size: cover;
       object-fit: cover;
       width: 80%;
-      height: 82%;
+      height: 74%;
       margin-left: 295px;
-      margin-top: 70px ;
+      margin-top: 97px ;
       border-radius: 10px;
     }
     .image-section img {
