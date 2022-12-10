@@ -240,7 +240,7 @@
     color: var(--orange-color-hover);
   }
   
-  @media (min-width: 560px) {
+  @media (min-width: 260px) {
     .form-content {
       min-width: 400px;
       padding: 60px;
@@ -285,9 +285,9 @@
       background-size: cover;
       object-fit: cover;
       width: 80%;
-      height: 75%;
+      height: 82%;
       margin-left: 295px;
-      margin-top: 95px ;
+      margin-top: 70px ;
       border-radius: 10px;
     }
     .image-section img {
