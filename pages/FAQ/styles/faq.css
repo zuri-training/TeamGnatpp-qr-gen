@@ -56,7 +56,7 @@ section {
   grid-template-rows: 1fr;
   width: 65%;
   margin: auto;
-  padding: 0 0 20px 0;
+  /* padding: 0 0 20px 0; */
 }
 
 /* .faq_section_2:hover {
@@ -78,10 +78,6 @@ section {
   cursor: pointer;
   padding: 8px;
   font-weight: 550;
-}
-
-summary {  
-  /* background-color: #FC9E4F; */
 }
 
 .faq_section_2 article {

@@ -15,6 +15,9 @@
 body  {
     font-family: 'Inter', sans-serif;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -22,6 +25,7 @@ main {
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: fixed, fixed, fixed, fixed;
     background-position: 10% 90%, 90% 85%, 10% 3%, 90% 0;
+    flex-grow: 1;
 }
 
 h1 { 
@@ -117,6 +121,10 @@ label {
     color: var(--blue);
     cursor: pointer;
     font-size: 17px;
+}
+
+textarea {
+    resize: none;
 }
 
 .box-2 {
