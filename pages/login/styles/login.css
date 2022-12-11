@@ -286,39 +286,38 @@ p.dash {
 
 
 @media screen and (max-width: 750px) {
-.left {
-  display: none;
-}
-
-.right {
-  width: 100%;
-  background-color: #ff3860;
-
-  background-image: url(../../../resources/images/login-img.png);
-  background-position: fixed;
-  background-size: cover;
-}
-
-.login {
-  width: 100%;
-}
-
-.right-content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
-  box-shadow: 0px 2.97201px 26.7481px rgba(0, 0, 0, 0.1);
-}
-
-
-main {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-}
+  .left {
+    display: none;
+  }
+  
+  .right {
+    width: 100%;
+  
+    background-image: url(../../../resources/images/login-img.png);
+    background-position: fixed;
+    background-size: cover;
+  }
+  
+  .login {
+    width: 100%;
+  }
+  
+  .right-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+    box-shadow: 0px 2.97201px 26.7481px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
 
   .button {
     font-size: 15px;
