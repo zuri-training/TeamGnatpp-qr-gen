@@ -54,7 +54,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 3%;
     width: 80%;
     /* padding: 3% 40%; */
@@ -63,7 +63,7 @@ section {
 .images-2 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .card {
@@ -75,8 +75,11 @@ section {
 
 .card img {
     width: 100%;
-    /* border-radius: 7px;
-    border: 2px solid var(--orange); */
+    border-radius: 7px;
+    border: 2px solid var(--orange);
+    box-shadow: 0px 0px 5px 1px rgb(129, 128, 128);
+    aspect-ratio: 4/2;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 890px) {
