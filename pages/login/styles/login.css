@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.g-signin2 {
+  display: none;
+}
+
 body {
   width: 100%;
 }
