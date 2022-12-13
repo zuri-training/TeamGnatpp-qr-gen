@@ -30,9 +30,9 @@ generateBtn.addEventListener("click", () => {
 
     // download button links assigning
     let qr = dummy.getAttribute('src');
-    qrPng = qr+'.png'
-    qrJpg = qr+'.jpg'
-    qrPdf = qr+'.pdf'
+    qrPng = qr+'&format=png'
+    qrJpg = qr+'&format=jpg'
+    qrPdf = qr+'&format=svg'
 
     pngLink.setAttribute('href', qrPng);
     pngLink.setAttribute('download', 'qr image.png');
