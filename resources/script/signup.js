@@ -33,33 +33,37 @@ const isValidEmail = email => {
 }
 
 const validateInputs = () => {
-    const fullnameValue =full_name.value.trim();
+    const fullnameValue =fullname.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
     
-    if(nameValue === '') {
+    if(fullnameValue === '') {
         setError(fullname, 'Name is required');
-    } else if (!isValidName(fullnameValue)) {
-        setError(email, 'Provide a valid name');
+        return
     } else {
         setSuccess(fullname);
     }
 
     if(emailValue === '') {
         setError(email, 'Email is required');
+        return
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'Provide a valid email address');
+        return
     } else {
         setSuccess(email);
     }
 
     if(passwordValue === '') {
         setError(password, 'Password is required');
+        return
     } else if (passwordValue.length < 8 ) {
-        setError(password, 'Password must be at least 8 character.')
+        setError(password, 'Password must be at least 8 character.');
+        return
     } else {
         setSuccess(password);
     }
 
+    window.location.href = "../login/login.html";
 };
