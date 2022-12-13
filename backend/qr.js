@@ -4,6 +4,12 @@ generateBtn = wrapper.querySelector(".form-right button");
 const wrapperCode = document.querySelector(".gen-qr"),
 qrImg = wrapperCode.querySelector("img");
 
+const dummy = document.querySelector(".gen-qr img");
+let pngLink = document.querySelector(".qr-png")
+let jpgLink = document.querySelector(".qr-jpg")
+let pdfLink = document.querySelector(".qr-pdf")
+
+
 
 generateBtn.addEventListener("click", () => {
     let qrValue = qrInput.value;
@@ -14,6 +20,20 @@ generateBtn.addEventListener("click", () => {
     qrImg.addEventListener("load", () => {
         generateBtn.innerText = "Generate QR Code";
     });
+
+    let qr = dummy.getAttribute('src');
+    qrPng = qr+'.png'
+    qrJpg = qr+'.jpg'
+    qrPdf = qr+'.pdf'
+
+    pngLink.setAttribute('href', qrPng);
+    pngLink.setAttribute('download', 'qr image.png');
+
+    jpgLink.setAttribute('href', qrJpg);
+    jpgLink.setAttribute('download', 'qr image.jpg');
+
+    pdfLink.setAttribute('href', qrPdf);
+    pdfLink.setAttribute('download', 'qr image.pdf');
 
 });
 
