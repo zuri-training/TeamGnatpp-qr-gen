@@ -12,9 +12,13 @@ let pngLink = document.querySelector(".qr-png")
 let jpgLink = document.querySelector(".qr-jpg")
 let pdfLink = document.querySelector(".qr-pdf")
 
+// input box validation
+const box = document.querySelector(".form-left .box");
 
 
 generateBtn.addEventListener("click", () => {
+
+
     let qrValue = qrInput.value;
     if(!qrValue) return;
     generateBtn.innerText = "Generating QR Code...";
