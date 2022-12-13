@@ -1,9 +1,12 @@
+// Qr generator
 const wrapper = document.querySelector(".form"),
 qrInput = wrapper.querySelector(".form-left input"),
 generateBtn = wrapper.querySelector(".form-right button");
 const wrapperCode = document.querySelector(".gen-qr"),
 qrImg = wrapperCode.querySelector("img");
 
+
+// download button
 const dummy = document.querySelector(".gen-qr img");
 let pngLink = document.querySelector(".qr-png")
 let jpgLink = document.querySelector(".qr-jpg")
@@ -21,6 +24,7 @@ generateBtn.addEventListener("click", () => {
         generateBtn.innerText = "Generate QR Code";
     });
 
+    // download button links assigning
     let qr = dummy.getAttribute('src');
     qrPng = qr+'.png'
     qrJpg = qr+'.jpg'
