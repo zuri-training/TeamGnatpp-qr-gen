@@ -17,7 +17,7 @@ function onSignIn(googleUser) {
 
 
 
-    wrapper.addEventListener("click", () => {
+    wrapper.addEventListener("load", () => {
         wrapper.setAttribute('onclick', location.href='../dashboard/dashboard.html');
     });
 }
