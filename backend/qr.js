@@ -7,10 +7,10 @@ qrImg = wrapperCode.querySelector("img");
 
 
 // download button
-// const dummy = document.querySelector(".gen-qr img");
-// let pngLink = document.querySelector(".qr-png")
-// let jpgLink = document.querySelector(".qr-jpg")
-// let pdfLink = document.querySelector(".qr-pdf")
+const dummy = document.querySelector(".gen-qr img");
+let pngLink = document.querySelector(".qr-png")
+let jpgLink = document.querySelector(".qr-jpg")
+let pdfLink = document.querySelector(".qr-pdf")
 
 
 
@@ -25,19 +25,19 @@ generateBtn.addEventListener("click", () => {
     });
 
     // download button links assigning
-    // let qr = dummy.getAttribute('src');
-    // qrPng = qr+'.png'
-    // qrJpg = qr+'.jpg'
-    // qrPdf = qr+'.pdf'
+    let qr = dummy.getAttribute('src');
+    qrPng = qr+'.png'
+    qrJpg = qr+'.jpg'
+    qrPdf = qr+'.pdf'
 
-    // pngLink.setAttribute('href', qrPng);
-    // pngLink.setAttribute('download', 'qr image.png');
+    pngLink.setAttribute('href', qrPng);
+    pngLink.setAttribute('download', 'qr image.png');
 
-    // jpgLink.setAttribute('href', qrJpg);
-    // jpgLink.setAttribute('download', 'qr image.jpg');
+    jpgLink.setAttribute('href', qrJpg);
+    jpgLink.setAttribute('download', 'qr image.jpg');
 
-    // pdfLink.setAttribute('href', qrPdf);
-    // pdfLink.setAttribute('download', 'qr image.pdf');
+    pdfLink.setAttribute('href', qrPdf);
+    pdfLink.setAttribute('download', 'qr image.pdf');
 
 });
 
