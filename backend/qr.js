@@ -10,7 +10,7 @@ qrImg = wrapperCode.querySelector("img");
 const dummy = document.querySelector(".gen-qr img");
 let pngLink = document.querySelector(".qr-png")
 let jpgLink = document.querySelector(".qr-jpg")
-let pdfLink = document.querySelector(".qr-pdf")
+let svgLink = document.querySelector(".qr-svg")
 
 // input box validation
 const box = document.querySelector(".form-left .box");
@@ -32,7 +32,7 @@ generateBtn.addEventListener("click", () => {
     let qr = dummy.getAttribute('src');
     qrPng = qr+'&format=png'
     qrJpg = qr+'&format=jpg'
-    qrPdf = qr+'&format=svg'
+    qrSvg = qr+'&format=svg'
 
     pngLink.setAttribute('href', qrPng);
     pngLink.setAttribute('download', 'qr image.png');
@@ -40,8 +40,8 @@ generateBtn.addEventListener("click", () => {
     jpgLink.setAttribute('href', qrJpg);
     jpgLink.setAttribute('download', 'qr image.jpg');
 
-    pdfLink.setAttribute('href', qrPdf);
-    pdfLink.setAttribute('download', 'qr image.pdf');
+    svgLink.setAttribute('href', qrSvg);
+    svgLink.setAttribute('download', 'qr image.pdf');
 
 });
 
