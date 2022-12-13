@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pages/dashboard/styles/dashboard.css">
+    <link rel="stylesheet" href="/pages/dashboard/styles/scan-qr.css">
     <link rel="shortcut icon" href="../../resources/images/favicon.svg" type="image/x-icon">
-    <title>Dashboard | QRnaty</title>
+    <title>QR Scanner | QRnaty</title>
     <script src="https://kit.fontawesome.com/456f9bbaa5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,8 +30,8 @@
 
             <div class="dash-link">
                 <nav class="d-link">
-                    <li><a href="#"><i class="fa-solid fa-qrcode"></i> <span class="span-1"> QR Generator</span></a></li>
-                    <li><a href="./scan-qr.html"><i class="fa-solid fa-qrcode"></i> <span class="span-1"> QR Scanner</span></a></li>
+                    <li><a href="./dashboard.html"><i class="fa-solid fa-qrcode"></i> <span class="span-1"> QR Generator</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-qrcode"></i> <span class="span-1"> QR Scanner</span></a></li>
                     <li><a href="#"><i class="fa-solid fa-file-contract"></i> <span class="span-1">Documentation</span></a></li>
                     <li><a target="_blank" href="../FAQ/faq.html"><i class="fa-regular fa-circle-question"></i> <span class="span-1"> FAQ</span></a></li>
                 </nav>
@@ -45,12 +45,13 @@
                 <div class="form">                    
                     
                     <div class="form-left">
-                        <label for="url">Input you url or text here</label>
-                        <input class="box" placeholder="type here..." required>
+                        <label for="url">Choose your QR code</label>
+                        <input type="file" class="box" placeholder="type here..." required>
+                        <p></p>
                     </div>
 
                     <div class="form-right">
-                        <button class="a-btn btn-1" type="submit">Generate</button>
+                        <button class="a-btn btn-1" type="submit">Scan</button>
                         <input class="btn-2" type="reset" value="Cancel">
                     </div>
 
@@ -59,20 +60,14 @@
 
             <div class="output">
                 <div class="code">
-                    <div class="gen-qr">
-                        <img src="../../resources/images/qr-dummy.png" alt="qr-code">
-                    </div>
+                    <textarea class="box" placeholder="your scan result..." name="result" id="" cols="30" rows="10"></textarea>
 
                     <div class="download">
                         <p class="download-text">
-                            Download your QR
+                            Action
                         </p>
                         <div class="download-btn">
-                            <ul>
-                                <li class="btn-list"><a class="qr-png btn-link" target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i></i> <span>Download</span> png</a></li>                                
-                                <li class="btn-list"><a class="qr-jpg btn-link" target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i></i> <span>Download</span> jpg</a></li>                                
-                                <li class="btn-list"><a class="qr-svg btn-link" target="_blank"><i class="fa-solid fa-cloud-arrow-down"></i></i> <span>Download</span> svg</a></li>                                
-                            </ul>
+                            <button class="copy btn-1">Copy text</button>
                         </div>
                     </div>
                 </div>
@@ -82,5 +77,5 @@
     </main>
 
 </body>
-<script src="../../backend/qr.js"></script>
+<script src="../../backend/qr-scan.js"></script>
 </html>
