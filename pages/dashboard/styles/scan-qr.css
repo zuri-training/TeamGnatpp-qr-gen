@@ -179,7 +179,8 @@ label, .download-text {
 }
 
 .form-right {
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: column;
     gap: 5px;
 }
