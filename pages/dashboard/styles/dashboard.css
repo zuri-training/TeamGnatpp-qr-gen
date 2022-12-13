@@ -155,7 +155,7 @@ label, .download-text {
     margin-bottom: 1%;
 }
 
-form {
+.form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,6 +408,7 @@ form {
 
     .gen-qr img {
         width: 70%;
+        mix-blend-mode: color-burn;
     }
 
     .download {
@@ -419,7 +420,7 @@ form {
         text-align: center;
     }
 
-    form {
+    .form {
         flex-wrap: wrap;
     }
 

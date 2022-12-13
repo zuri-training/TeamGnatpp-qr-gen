@@ -41,25 +41,25 @@
 
         <div class="dashboard">
             <div class="generate">
-                <form action="">                    
+                <div class="form">                    
                     
                     <div class="form-left">
                         <label for="url">Input you url or text here</label>
-                        <input class="box" for="url" placeholder="type here..."  type="link" required>
+                        <input class="box" placeholder="type here..." required>
                     </div>
 
                     <div class="form-right">
-                        <input class="btn-1" type="submit" value="Generate">
+                        <button class="a-btn btn-1" type="submit">Generate</button>
                         <input class="btn-2" type="reset" value="Cancel">
                     </div>
 
-                </form>
+                </div>
             </div>
 
             <div class="output">
                 <div class="code">
                     <div class="gen-qr">
-                        <img src="../../resources/images/qr-dummy.png" alt="">
+                        <img src="../../resources/images/qr-dummy.png" alt="qr-code">
                     </div>
 
                     <div class="download">
@@ -81,5 +81,5 @@
     </main>
 
 </body>
-
+<script src="../../backend/qr.js"></script>
 </html>
