@@ -8,37 +8,8 @@
     <link rel="stylesheet" href="../../resources/styles/header-footer.css">
     <title>Login | QRnaty</title>
     <link rel="shortcut icon" href="../../resources/images/favicon.svg" type="image/x-icon">
-    
-    <meta name="google-signin-client_id" content="913560335822-v2m8jl427bl2qudrhco5b08ltbe5foi9.apps.googleusercontent.com">
 </head>
 <body>
-  <!-- <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
-  <!-- <script src="../../backend/google-sign.js"></script> -->
-
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="913560335822-v2m8jl427bl2qudrhco5b08ltbe5foi9.apps.googleusercontent.com">
-    
-    <script>
-      function handleCredentialResponse(googleUser) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://yourbackend.example.com/tokensignin');
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.onload = function() {
-          console.log('Signed in as: ' + xhr.responseText);
-        };
-        xhr.send('idtoken=' + id_token);
-      }
-    </script>
- 
-
-  <!-- <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <div id="g_id_onload"
-         data-client_id="913560335822-v2m8jl427bl2qudrhco5b08ltbe5foi9.apps.googleusercontent.com"
-         data-ux_mode="redirect"
-         data-login_uri="../dashboard/dashboard.html">
-    </div>
-    <div class="g_id_signin" data-type="standard"></div> -->
 
   <header>
         <div class="header-1">
@@ -125,7 +96,7 @@
 
               <div class="button-group">
                 <button type="submit" class="button login-button">Login</button>
-                <a href="" class="button google-button g-signin2" data-onsuccess="handleCredentialResponse">
+                <a href="" class="button google-button">
                   <img src="../../resources/images/google logo.jpeg" alt="" />
                   <p>Login with Google</p>
                 </a>
