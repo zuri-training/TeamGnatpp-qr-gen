@@ -12,18 +12,15 @@
     <meta name="google-signin-client_id" content="913560335822-v2m8jl427bl2qudrhco5b08ltbe5foi9.apps.googleusercontent.com">
 </head>
 <body>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
   <!-- <script src="../../backend/google-sign.js"></script> -->
 
-  <html>
-  <body>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID">
+    <meta name="google-signin-client_id" content="913560335822-v2m8jl427bl2qudrhco5b08ltbe5foi9.apps.googleusercontent.com">
     
     <script>
       function handleCredentialResponse(googleUser) {
-        ...
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'https://yourbackend.example.com/tokensignin');
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -33,8 +30,7 @@
         xhr.send('idtoken=' + id_token);
       }
     </script>
-  </body>
-</html>
+ 
 
   <!-- <script src="https://accounts.google.com/gsi/client" async defer></script>
     <div id="g_id_onload"
