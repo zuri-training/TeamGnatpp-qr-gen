@@ -408,7 +408,6 @@ label, .download-text {
 
     .gen-qr img {
         width: 70%;
-        mix-blend-mode: color-burn;
     }
 
     .download {
