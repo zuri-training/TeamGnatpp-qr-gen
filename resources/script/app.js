@@ -14,6 +14,6 @@ async function fetchAPI(data, endpoint, method) {
         const result = await response.json()
         return result;
     }catch(error) {
-
+        console.log(error)
     }
 }

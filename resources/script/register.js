@@ -24,6 +24,8 @@ function registerUser(event){
         if(data.status){
             alert('User created successfully')
             window.location.href = "../login/login.html";
+        } else{
+            alert('User already exist')
         }
     });
 }
