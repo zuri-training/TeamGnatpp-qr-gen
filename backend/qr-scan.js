@@ -17,7 +17,14 @@ function fetchRequest(file, formData) {
         form.querySelector("img").src = URL.createObjectURL(file);
         wrapper.classList.add("active");
     }).catch(() => {
-        infoText.innerText = "Couldn't scan QR Code";
+        infoText.innerText = "Scan successfully";
+
+        if (result = null) {
+            infoText.innerText = "Couldn't scan QR Code";
+          } else {
+            infoText.innerText = "Scan successfully";
+          }
+          
     });
 }
 
@@ -33,6 +40,3 @@ copyBtn.addEventListener("click", () => {
     let text = document.querySelector("textarea").textContent;
     navigator.clipboard.writeText(text);
 });
-
-// form.addEventListener("click", () => fileInp.click());
-// closeBtn.addEventListener("click", () => wrapper.classList.remove("active"));
