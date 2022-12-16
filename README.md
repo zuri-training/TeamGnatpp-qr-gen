@@ -1,4 +1,7 @@
+### Live product
+[Click here](https://teamgnatpp.netlify.app) to visit our website
 
+Or copy the link [https://teamgnatpp.netlify.app](https://teamgnatpp.netlify.app) to your browser
 ## Project Description
 # `QR Gen`
 
