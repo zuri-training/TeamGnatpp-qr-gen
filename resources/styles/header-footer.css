@@ -67,7 +67,7 @@ header {
 }
 
 nav a {
-    margin: 0 3%;
+    margin: 0 2%;
     padding: 1% 0;
     /* border-bottom: 2px solid var(--orange); */
     color: white;
@@ -199,8 +199,21 @@ hr {
     header {
         height: 180px;        
         padding: 1% 5%;
-        background-position: 82% 0px;
-        background-size: 82%;
+        background-position: 73% 0px;
+        background-size: 83%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .nav-menu {
+        width: 60%;
+    }
+
+    header {
+        height: 180px;        
+        padding: 1% 5%;
+        background-position: 95% 0px;
+        background-size: 90%;
     }
 }
 
