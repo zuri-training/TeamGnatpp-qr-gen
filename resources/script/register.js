@@ -1,14 +1,13 @@
-const registerForm = document.getElementById('register')
+const registerForm = document.getElementById('form')
 
 function registerUser(event){
     event.preventDefault();
-    console.log(event.target.fullname.value);
-
     let fullname = event.target.fullname.value;
     let email = event.target.email.value;
-    let password = event.target.password.value;
+    let password = event.target.encry_password.value;
 
-    if (!fullname || !email || !password) {
+ 
+    if (!fullname || !email || !encry_password) {
         alert("All fields are required")
         return;
     }
@@ -18,16 +17,18 @@ function registerUser(event){
         fullname,
         email,
         password,
-    }
+    };
 
-    fetchAPI(userObj, 'api/signup', 'POST').then(data => {
+    fetchAPI(userObj, '/signup', 'POST').then(data => {
         if(data.status){
-            alert('User created successfully')
-            window.location.href = "../login/login.html";
-        } else{
-            alert('User already exist')
+            // alert('User created successfully')
+            window.location.href = '../../pages/login/login.html';
         }
+    //  else{
+    //         alert('User already exist')
+    //     }
     });
-}
+};
 
-registerForm.addEventListener('submit', registerUser)
+
+registerForm.addEventListener('submit', registerUser);

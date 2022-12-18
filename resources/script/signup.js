@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const fullname = document.getElementById('full_name');
+const fullname = document.getElementById('fullname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 

@@ -1,12 +1,12 @@
-const API = 'http://localhost:4000/api/v1';
+const API = 'http://localhost:8000/api';
 
 async function fetchAPI(data, endpoint, method) {
 
     try {
-        const response = await fetch ('${API}/${endpoint}', {
+        const response = await fetch (`${API}/${endpoint}`, {
             method: 'POST', 
             headers: {
-                'content-type': 'application/json'
+                'Content-type': 'application/json'
             },
             body: JSON.stringify(data)
         })
