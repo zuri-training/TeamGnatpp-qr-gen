@@ -1,6 +1,6 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
-const password = document.getElementById('password');
+const password = document.getElementById('encry_password');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -48,18 +48,17 @@ const validateInputs = () => {
     if(passwordValue === '') {
         setError(password, 'Password is required');
         return
-    } else if (passwordValue.length < 3 ) {
+    } else if (passwordValue.length < 8 ) {
         setError(password, 'Password must be at least 3 character.');
         return
     } else {
         setSuccess(password);
     }
-
-    window.location.href = "../dashboard/dashboard.html";
+  window.location.href = "../dashboard/dashboard.html";
 };
 
 
-const loginForm = document.getElementById('form')
+
 
 function loginUser(event){
     event.preventDefault();
@@ -78,14 +77,15 @@ function loginUser(event){
         password,
     }
 
-    fetchAPI(userObj, 'api/signin', 'POST').then(data => {
+    fetchAPI(userObj, '/signin', 'POST').then(data => {
         if(data.status){
-            alert('Login successfully')
+           alert(data.message);
             window.location.href = "../dashboard/dashboard.html";
         } else{
-            alert('Login not successful')
+            alert(data.message)
+            return
         }
     });
 }
 
-loginForm.addEventListener('submit', loginUser)
+form.addEventListener('submit', loginUser)
